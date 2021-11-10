@@ -1,19 +1,58 @@
-.gifCol {
-    border: 1px solid var(--bs-gray-900);
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.siteT {
+    text-decoration: none;
+    color: var(--bs-gray-900);
+    font-size: 25px;
+}
+
+header {
+    background-color: rgba(153, 1, 241, 0.863);
+}
+
+.main {
+    background-image: url('purple.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.gifs {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
 }
 
 .gifTitle {
-    background-color: black;
-    color: white;
-    align-self: start;
-    border-radius: 5px;
-    font-size: 20px;
+    display: block;
+    background-color: var(--bs-gray-900);
+    color: var(--bs-white);
+}
+
+.gifBody {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gifImage {
-    object-fit: cover;
+    max-width: 500px;
+    max-height: 500px;
 }
 
-.container-fluid {
-    background-color: var(--bs-gray);
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bs-gray-900);
+    color: var(--bs-white);
+}
+
+@media (max-width:425px){
+    .gifTitle{
+        font-size:3vw;
+    }
 }

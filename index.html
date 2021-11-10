@@ -11,21 +11,25 @@
 </head>
 
 <body>
-    <div class="container">
-        <form class="buscargif">
-            <div class="mb-3">
-                <p class="h2 text-center">Buscador de Gifs</p>
-                <input type="text" class="form-control" id="term">
-            </div>
+    <header class="container-fluid d-flex flex-column justify-content-center align-items-center">
+        <a href="" class="siteT btn btn-light my-3">Buscador de Gifs</a>
+        <form class="buscarGif container my-3">
+            <input type="text" class="form-control" placeholder="Qual gif você quer hoje?" id="term">
         </form>
-    </div>
-    <div id="gifshow" class="container-fluid">
-        <div class="row text-center">
-            <div class="gifCol col">
-                <p class="gifTitle"></p>
-                <img src="" class="gifImage img-fluid" />
+    </header>
+    <div class="main container-fluid p-3">
+        <div class="gifs container d-flex justify-content-center align-items-center p-3">
+            <div class="row">
+                <div class="col">
+                    <div class="spinner-border text-warning" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="footer text-center">
+        Criado por Murillo
     </div>
     <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
